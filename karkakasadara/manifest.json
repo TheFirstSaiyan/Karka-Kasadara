@@ -1,0 +1,18 @@
+{
+  "manifest_version":2,
+  "version":"0.1",
+  "name":"KarkaKasadara",
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "js":["main.js"]
+    }
+  ],
+  "background":{
+    "scripts":["bg.js"]
+  },
+  "browser_action":{
+    "default_title":"know the tamil word!",
+    "default_popup":"index.html"
+  }
+}
